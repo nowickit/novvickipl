@@ -57,6 +57,7 @@
     transition: border-color .15s, color .15s;
   }
   a:hover, a:focus-visible { color: var(--accent); border-color: var(--accent); }
+  img.mail { height: 1.2em; width: auto; vertical-align: -0.3em; }
   footer {
     margin-top: 3rem;
     font-size: 0.8rem;
@@ -77,21 +78,11 @@
   </p>
 
   <ul>
-    <li><a id="mail" data-u="kemot" data-d="lp.ikcivvon">tomek [at] novvicki [dot] pl</a></li>
+    <li><img class="mail" src="c.png" width="134" height="20" alt="Email address (image)"></li>
     <li><a href="https://www.linkedin.com/in/novvicki" rel="me">LinkedIn</a></li>
     <li><a href="https://github.com/nowickit" rel="me">GitHub</a></li>
   </ul>
 
   <footer>Kraków, Poland</footer>
-</main>
-<script>
-  (function () {
-    var a = document.getElementById('mail');
-    var r = function (s) { return s.split('').reverse().join(''); };
-    var addr = r(a.dataset.u) + String.fromCharCode(64) + r(a.dataset.d);
-    a.textContent = addr;
-    a.href = 'mai' + 'lto:' + addr;
-  })();
-</script>
-</body>
+</main></body>
 </html>

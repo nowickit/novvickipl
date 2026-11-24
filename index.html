@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tomasz Nowicki</title>
-<meta name="description" content="Tomasz Nowicki, technical educator focused on observability and OpenTelemetry.">
+<title>Tomek Nowicki</title>
+<meta name="description" content="Tomek Nowicki, technical educator focused on observability and OpenTelemetry.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0a'/><text x='16' y='22' font-family='monospace' font-size='16' fill='%23e11d2e' text-anchor='middle'>tn</text></svg>">
 <style>
   :root {
@@ -66,7 +66,7 @@
 </head>
 <body>
 <main>
-  <h1>Tomasz Nowicki</h1>
+  <h1>Tomek Nowicki</h1>
   <p class="role">Technical Educator · Observability &amp; OpenTelemetry</p>
 
   <p class="bio">
@@ -77,12 +77,21 @@
   </p>
 
   <ul>
-    <li><a href="mailto:tomek@novvicki.pl">tomek@novvicki.pl</a></li>
+    <li><a id="mail" data-u="kemot" data-d="lp.ikcivvon">tomek [at] novvicki [dot] pl</a></li>
     <li><a href="https://www.linkedin.com/in/novvicki" rel="me">LinkedIn</a></li>
     <li><a href="https://github.com/nowickit" rel="me">GitHub</a></li>
   </ul>
 
   <footer>Kraków, Poland</footer>
 </main>
+<script>
+  (function () {
+    var a = document.getElementById('mail');
+    var r = function (s) { return s.split('').reverse().join(''); };
+    var addr = r(a.dataset.u) + String.fromCharCode(64) + r(a.dataset.d);
+    a.textContent = addr;
+    a.href = 'mai' + 'lto:' + addr;
+  })();
+</script>
 </body>
 </html>
